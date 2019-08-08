@@ -122,6 +122,9 @@ class _MyHomePageState extends State<MyHomePage> {
             case 5:
               Application.router.navigateTo(context, Routes.keepAlive, transition: TransitionType.cupertino);
               break;
+            case 6:
+              Application.router.navigateTo(context, Routes.beautifulSearchBar, transition: TransitionType.cupertino);
+              break;
           }
         }),
       ),
@@ -151,6 +154,9 @@ class _MyHomePageState extends State<MyHomePage> {
             )),
       ));
     }
+    widgets.add(Container(
+      height: 20,
+    ));
     return widgets;
   }
 }

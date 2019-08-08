@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluro/fluro.dart';
+import 'package:learnings/beautiful_search_bar/index.dart';
 import 'package:learnings/bottom_app_bar/index1.dart';
 import 'package:learnings/bottom_app_bar/index2.dart';
 import 'package:learnings/bottom_app_bar/view_page.dart';
@@ -15,7 +16,8 @@ class Routes {
   static String bottomAppBar2 = '/bottom_app_bar2';
   static String customRouterTransition = '/custom_router_transition';
   static String keepAlive = '/keep_alive';
-  static String frostedGlassStyle = '/FrostedGlassStyle';
+  static String frostedGlassStyle = '/frostedGlassStyle';
+  static String beautifulSearchBar = '/beautifulSearchBar';
   static String viewPager = '/view_page';
 
   static void configureRoutes(Router router) {
@@ -58,6 +60,10 @@ class Routes {
     router.define(frostedGlassStyle, handler: Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return FrostedGlassStyleIndexPage();
+    }));
+    router.define(beautifulSearchBar, handler: Handler(
+        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return BeautifulSearchBarIndexPage();
     }));
   }
 }
