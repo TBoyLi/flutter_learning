@@ -5,14 +5,14 @@
         <entry key="async">
           <value>
             <list>
-              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.2.0/lib" />
+              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.3.0/lib" />
             </list>
           </value>
         </entry>
         <entry key="boolean_selector">
           <value>
             <list>
-              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-1.0.4/lib" />
+              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-1.0.5/lib" />
             </list>
           </value>
         </entry>
@@ -34,6 +34,13 @@
           <value>
             <list>
               <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/cupertino_icons-0.1.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="fluro">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/fluro-1.5.1/lib" />
             </list>
           </value>
         </entry>
@@ -61,7 +68,7 @@
         <entry key="meta">
           <value>
             <list>
-              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.1.6/lib" />
+              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.1.7/lib" />
             </list>
           </value>
         </entry>
@@ -75,7 +82,7 @@
         <entry key="pedantic">
           <value>
             <list>
-              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.7.0/lib" />
+              <option value="$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.8.0+1/lib" />
             </list>
           </value>
         </entry>
@@ -152,15 +159,16 @@
       </option>
     </properties>
     <CLASSES>
-      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.2.0/lib" />
-      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-1.0.4/lib" />
+      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.3.0/lib" />
+      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-1.0.5/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/charcode-1.1.2/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/collection-1.14.11/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/cupertino_icons-0.1.2/lib" />
+      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/fluro-1.5.1/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/matcher-0.12.5/lib" />
-      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.1.6/lib" />
+      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.1.7/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/path-1.6.2/lib" />
-      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.7.0/lib" />
+      <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.8.0+1/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/quiver-2.0.3/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.5.5/lib" />
       <root url="file://$USER_HOME$/Library/Flutter/.pub-cache/hosted/pub.flutter-io.cn/stack_trace-1.9.3/lib" />

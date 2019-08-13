@@ -8,6 +8,7 @@ import 'package:learnings/bottom_navigation_bar/index.dart';
 import 'package:learnings/custom_router_transition/index.dart';
 import 'package:learnings/frosted_glass_style/index.dart';
 import 'package:learnings/keep_alive/index.dart';
+import 'package:learnings/textfields_focus/index.dart';
 
 class Routes {
   static String root = '/';
@@ -18,6 +19,7 @@ class Routes {
   static String keepAlive = '/keep_alive';
   static String frostedGlassStyle = '/frostedGlassStyle';
   static String beautifulSearchBar = '/beautifulSearchBar';
+  static String textfiedldsFocus = '/textfiedldsFocus';
   static String viewPager = '/view_page';
 
   static void configureRoutes(Router router) {
@@ -61,9 +63,15 @@ class Routes {
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return FrostedGlassStyleIndexPage();
     }));
+
     router.define(beautifulSearchBar, handler: Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return BeautifulSearchBarIndexPage();
+    }));
+
+    router.define(textfiedldsFocus, handler: Handler(
+        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return TextfieldsFocusIndexPage();
     }));
   }
 }

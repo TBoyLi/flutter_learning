@@ -125,6 +125,8 @@ class _MyHomePageState extends State<MyHomePage> {
             case 6:
               Application.router.navigateTo(context, Routes.beautifulSearchBar, transition: TransitionType.cupertino);
               break;
+              case 7: 
+              Application.router.navigateTo(context, Routes.textfiedldsFocus, transition: TransitionType.cupertino);
           }
         }),
       ),
