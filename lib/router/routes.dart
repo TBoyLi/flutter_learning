@@ -8,10 +8,12 @@ import 'package:learnings/bottom_navigation_bar/index.dart';
 import 'package:learnings/custom_router_transition/index.dart';
 import 'package:learnings/frosted_glass_style/index.dart';
 import 'package:learnings/keep_alive/index.dart';
+import 'package:learnings/ninghao/index.dart';
 import 'package:learnings/textfields_focus/index.dart';
 
 class Routes {
   static String root = '/';
+  static String ningHaoRoot = '/ning_hao_root';
   static String bottomNavigationBar = '/bottom_navigation_bar';
   static String bottomAppBar1 = '/bottom_app_bar1';
   static String bottomAppBar2 = '/bottom_app_bar2';
@@ -26,7 +28,14 @@ class Routes {
     router.notFoundHandler = Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       print('ERROR====>ROUTE WAS NOT FONUND!!!');
+
     });
+
+    router.define(ningHaoRoot,  handler: Handler(
+        handlerFunc: (BuildContext buildContext, Map<String, List<String>> params) {
+            return NingHaoIndexPage();
+        }
+    ));
 
     router.define(bottomNavigationBar, handler: Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {

@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     final Router router = Router();
     Routes.configureRoutes(router);
     Application.router = router;
@@ -55,6 +54,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<String> items = [
+    "NingHao Learning",
     "BottomNavigationBar底部导航",
     "BottomAppBar底部导航1",
     "BottomAppBar底部导航2",
@@ -89,44 +89,57 @@ class _MyHomePageState extends State<MyHomePage> {
         children: _getItems((index) {
           switch (index) {
             case 0:
+              Application.router.navigateTo(context, Routes.ningHaoRoot,
+                  transition: TransitionType.cupertino);
+              break;
+            case 1:
               // Navigator.of(context)
               //     .push(CupertinoPageRoute(builder: (BuildContext context) {
               //   return BottomNavigationWidget();
               // }));
-              Application.router.navigateTo(context, Routes.bottomNavigationBar, transition: TransitionType.cupertino);
-              break;
-            case 1:
-              // Navigator.of(context)
-              //     .push(MaterialPageRoute(builder: (BuildContext context) {
-              //   return BottomAppWidget1();
-              // }));
-              Application.router.navigateTo(context, Routes.bottomAppBar1, transition: TransitionType.cupertino);
+              Application.router.navigateTo(context, Routes.bottomNavigationBar,
+                  transition: TransitionType.cupertino);
               break;
             case 2:
               // Navigator.of(context)
               //     .push(MaterialPageRoute(builder: (BuildContext context) {
-              //   return BottomAppWidget2();
+              //   return BottomAppWidget1();
               // }));
-              Application.router.navigateTo(context, Routes.bottomAppBar2, transition: TransitionType.cupertino);
+              Application.router.navigateTo(context, Routes.bottomAppBar1,
+                  transition: TransitionType.cupertino);
               break;
             case 3:
-             // Navigator.of(context)
+              // Navigator.of(context)
               //     .push(MaterialPageRoute(builder: (BuildContext context) {
               //   return BottomAppWidget2();
               // }));
-              Application.router.navigateTo(context, Routes.customRouterTransition, transition: TransitionType.cupertino);
+              Application.router.navigateTo(context, Routes.bottomAppBar2,
+                  transition: TransitionType.cupertino);
               break;
             case 4:
-              Application.router.navigateTo(context, Routes.frostedGlassStyle, transition: TransitionType.cupertino);
+              // Navigator.of(context)
+              //     .push(MaterialPageRoute(builder: (BuildContext context) {
+              //   return BottomAppWidget2();
+              // }));
+              Application.router.navigateTo(
+                  context, Routes.customRouterTransition,
+                  transition: TransitionType.cupertino);
               break;
             case 5:
-              Application.router.navigateTo(context, Routes.keepAlive, transition: TransitionType.cupertino);
+              Application.router.navigateTo(context, Routes.frostedGlassStyle,
+                  transition: TransitionType.cupertino);
               break;
             case 6:
-              Application.router.navigateTo(context, Routes.beautifulSearchBar, transition: TransitionType.cupertino);
+              Application.router.navigateTo(context, Routes.keepAlive,
+                  transition: TransitionType.cupertino);
               break;
-              case 7: 
-              Application.router.navigateTo(context, Routes.textfiedldsFocus, transition: TransitionType.cupertino);
+            case 7:
+              Application.router.navigateTo(context, Routes.beautifulSearchBar,
+                  transition: TransitionType.cupertino);
+              break;
+            case 8:
+              Application.router.navigateTo(context, Routes.textfiedldsFocus,
+                  transition: TransitionType.cupertino);
           }
         }),
       ),
