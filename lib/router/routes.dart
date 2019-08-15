@@ -9,11 +9,17 @@ import 'package:learnings/custom_router_transition/index.dart';
 import 'package:learnings/frosted_glass_style/index.dart';
 import 'package:learnings/keep_alive/index.dart';
 import 'package:learnings/ninghao/index.dart';
+import 'package:learnings/ninghao/pages/bottom_sheet_page.dart';
+import 'package:learnings/ninghao/pages/stepper_page.dart';
 import 'package:learnings/textfields_focus/index.dart';
 
 class Routes {
   static String root = '/';
   static String ningHaoRoot = '/ning_hao_root';
+
+  static String bottomSheet = '/ning_hao_root/bottom_sheet';
+  static String stepper = '/ning_hao_root/stepper';
+
   static String bottomNavigationBar = '/bottom_navigation_bar';
   static String bottomAppBar1 = '/bottom_app_bar1';
   static String bottomAppBar2 = '/bottom_app_bar2';
@@ -81,6 +87,15 @@ class Routes {
     router.define(textfiedldsFocus, handler: Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return TextfieldsFocusIndexPage();
+    }));
+
+    router.define(bottomSheet, handler: Handler(
+        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return BottomSheetPage();
+    }));
+    router.define(stepper, handler: Handler(
+        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return StepperPage();
     }));
   }
 }

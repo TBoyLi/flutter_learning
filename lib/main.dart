@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     Application.router = router;
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Learning',
       onGenerateRoute: Application.router.generator,
       theme: ThemeData(
