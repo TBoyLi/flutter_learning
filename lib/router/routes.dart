@@ -5,6 +5,7 @@ import 'package:learnings/bottom_app_bar/index1.dart';
 import 'package:learnings/bottom_app_bar/index2.dart';
 import 'package:learnings/bottom_app_bar/view_page.dart';
 import 'package:learnings/bottom_navigation_bar/index.dart';
+import 'package:learnings/bottom_navigation_bar/index_keep_live.dart';
 import 'package:learnings/custom_router_transition/index.dart';
 import 'package:learnings/frosted_glass_style/index.dart';
 import 'package:learnings/keep_alive/index.dart';
@@ -21,6 +22,7 @@ class Routes {
   static String stepper = '/ning_hao_root/stepper';
 
   static String bottomNavigationBar = '/bottom_navigation_bar';
+  static String bottomNavigationBar1 = '/bottom_navigation_bar1';
   static String bottomAppBar1 = '/bottom_app_bar1';
   static String bottomAppBar2 = '/bottom_app_bar2';
   static String customRouterTransition = '/custom_router_transition';
@@ -46,6 +48,11 @@ class Routes {
     router.define(bottomNavigationBar, handler: Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       return IndexBottomNavigationBarPage();
+    }));
+
+  router.define(bottomNavigationBar1, handler: Handler(
+        handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+      return IndexBottomNavigationBarKeepPage();
     }));
 
     router.define(bottomAppBar1, handler: Handler(

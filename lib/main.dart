@@ -57,6 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<String> items = [
     "NingHao Learning",
     "BottomNavigationBar底部导航",
+    "BottomNavigationBar底部导航1",
     "BottomAppBar底部导航1",
     "BottomAppBar底部导航2",
     "自定义路由样式",
@@ -93,7 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.ningHaoRoot,
                   transition: TransitionType.cupertino);
               break;
-            case 1:
+            case 1: 
+              Application.router.navigateTo(context, Routes.bottomNavigationBar1,
+                  transition: TransitionType.cupertino);
+              break;
+              break;
+            case 2:
               // Navigator.of(context)
               //     .push(CupertinoPageRoute(builder: (BuildContext context) {
               //   return BottomNavigationWidget();
@@ -101,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.bottomNavigationBar,
                   transition: TransitionType.cupertino);
               break;
-            case 2:
+            case 3:
               // Navigator.of(context)
               //     .push(MaterialPageRoute(builder: (BuildContext context) {
               //   return BottomAppWidget1();
@@ -109,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.bottomAppBar1,
                   transition: TransitionType.cupertino);
               break;
-            case 3:
+            case 4:
               // Navigator.of(context)
               //     .push(MaterialPageRoute(builder: (BuildContext context) {
               //   return BottomAppWidget2();
@@ -117,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Application.router.navigateTo(context, Routes.bottomAppBar2,
                   transition: TransitionType.cupertino);
               break;
-            case 4:
+            case 5:
               // Navigator.of(context)
               //     .push(MaterialPageRoute(builder: (BuildContext context) {
               //   return BottomAppWidget2();
@@ -126,19 +132,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   context, Routes.customRouterTransition,
                   transition: TransitionType.cupertino);
               break;
-            case 5:
+            case 6:
               Application.router.navigateTo(context, Routes.frostedGlassStyle,
                   transition: TransitionType.cupertino);
               break;
-            case 6:
+            case 7:
               Application.router.navigateTo(context, Routes.keepAlive,
                   transition: TransitionType.cupertino);
               break;
-            case 7:
+            case 8:
               Application.router.navigateTo(context, Routes.beautifulSearchBar,
                   transition: TransitionType.cupertino);
               break;
-            case 8:
+            case 9:
               Application.router.navigateTo(context, Routes.textfiedldsFocus,
                   transition: TransitionType.cupertino);
           }
